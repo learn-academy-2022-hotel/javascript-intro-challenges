@@ -54,6 +54,10 @@ console.log(theQuestion.length)
 // Write the code that will log the index of the character "f" in the theQuestion.
 console.log(theQuestion.indexOf("f"));
 // Write the code that will log the concatenation of the two variables.
+console.log(theQuestion + " " + theAnswer);
 // Write the code that will log "the universe".
+console.log(theQuestion.slice(6, 18));
 // Write the code that will log the character "l" from theQuestion.
+console.log(theQuestion.slice(0, 1));
 // Write the code that will log whether theQuestion.length is greater than theAnswer.
+console.log(theQuestion.length > theAnswer);
