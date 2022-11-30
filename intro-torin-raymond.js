@@ -1,0 +1,12 @@
+console.log("71+34")
+console.log(71+34)
+console.log(123-67)
+console.log(56*23)
+console.log(45/5)
+console.log(5**7)
+console.log(33%6)
+let message="Torin"
+console.log(message.length)
+console.log(message.includes("e"))
+console.log(message[0])
+console.log(message.toUpperCase())
