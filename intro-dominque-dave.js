@@ -11,3 +11,6 @@ let tag = "Dave"
 console.log(tag.includes("v"))
 console.log("hello"[0])
 console.log(tag.toUpperCase())
+console.log(34/3 > 67/2)
+console.log(5 === "5")
+console.log(!3 !== 3)
