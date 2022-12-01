@@ -57,8 +57,42 @@ if(myNumber === 0){
 }
 // 🏔 Stretch Goals
 // Write a statement that takes a variable of a grade percentage and logs the letter grade for that percentage, if the grade is 100% log "perfect score", if the grade is zero log "no grade available."
+let aHigh = 99
+let aLow = 90
+let bHigh = 89
+let bLow = 80
+let cHigh = 79
+let cLow = 70
+let dHigh = 69
+let dLow = 65
+let myGrade = 0
 
+if(myGrade === 100) {
+    console.log("You got 100%!")
+} else if(myGrade <= aHigh && myGrade >= aLow) {
+    console.log("You got an A!")
+} else if(myGrade <= bHigh && myGrade >= bLow) {
+    console.log("You got a B!")
+} else if(myGrade <= cHigh && myGrade >= cLow) {
+    console.log("You got a C!")
+} else if(myGrade <= dHigh && myGrade >= dLow) {
+    console.log("You got a D!")
+} else if(myGrade === 0) {
+    console.log("You got a zero")
+} else {
+    console.log("You got an F.")
+}
 // Write a statement that takes a variable of a boolean, number, or string data type and logs the data type of the variable. HINT: Check out the JavaScript typeof operator.
-
+console.log(typeof 42)
+console.log(typeof 'Hello World')
+console.log(typeof false) 
 // Create a password checker using a single conditional statement. If a user inputs a password with 12 or more characters AND the password includes !, then log "That is a mighty strong password!" If the user’s password is 8 or more characters OR includes !, then log "That password is strong enough." Log "That is not a valid password." for every other input.
+let myPassword = "ab"
 
+if(myPassword.length >= 12 && myPassword.includes("!")) {
+    console.log("That is a mighty strong password!")
+} else if(myPassword.length >= 8 || myPassword.includes("!")) {
+    console.log("That password is strong enough.")
+} else {
+    console.log("That is not a valid password.")
+}
