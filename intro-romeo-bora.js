@@ -35,3 +35,72 @@ console.log("LEARN".length===5, "student".length===5)
 // Does "LEARN" contain the subset "rn"?
 // Does "LEARN"[0] strictly equal "l"?
 // Modify the code from the previous question to return true.
+
+// Write a statement that takes a variable of item and logs "in budget" if a price is $100 or less.
+let item = 85
+if (item < 100) {
+    console.log("in budget")
+}
+
+// Write a statement that takes a variable of hungry and logs "eat food" if you are hungry and "keep coding" if you are not hungry.
+let hungry = 3
+if (hungry === true) {
+    console.log("Eat food")
+} else {console.log("Keep coding")}
+
+// Write a statement that takes a variable of trafficLight and logs "go" if the light is green, "slow down" if the light is yellow and "stop" if the light is red.
+
+let trafficLight = "yellow"
+if (trafficLight === "green") {
+    console.log("Go") 
+} else if (trafficLight === "yellow") {
+    console.log("Slow down")
+} else if (trafficLight === "red") {
+    console.log("Stop")
+}
+
+// Write a statement that takes two variables that are numbers and outputs the larger number. If the numbers are equal, output "the numbers are the same".
+let numOne = 12
+let numTwo = 35
+if (numOne === numTwo) {
+    console.log("The numbers are the same")
+} else if (numOne < numTwo) {
+    console.log("35")
+} else if (numTwo < numOne) {
+    console.log("12")
+}
+
+// Write a statement that takes a variable of a number and logs whether the number is odd, even, or zero.
+let numThree = 13
+if (numThree === 0) {
+    console.log("The numnber is 0.") 
+} else if (numThree % 2 === 0) {
+    console.log("The number is even.")
+} else {
+    console.log("The number is odd")
+}
+
+// Stretch Challenges
+
+// Write a statement that takes a variable of a grade percentage and logs the letter grade for that percentage, if the grade is 100% log "perfect score", if the grade is zero log "no grade available."
+let grade = 0
+if (grade === 100) {
+    console.log("Perfect score") 
+} else if (grade == 0) {
+    console.log("No grade available")
+}
+
+// Write a statement that takes a variable of a boolean, number, or string data type and logs the data type of the variable. HINT: Check out the JavaScript typeof operator.
+let num = 15
+console.log(typeof num)
+
+// Create a password checker using a single conditional statement. If a user inputs a password with 12 or more characters AND the password includes !, then log "That is a mighty strong password!" If the user’s password is 8 or more characters OR includes !, then log "That password is strong enough." Log "That is not a valid password." for every other input.
+let password = "12345ssssssssss"
+if (password.length < 6) {
+    console.log("That is not a valid password.")
+}
+else if (password.length >= 12 && password.includes("!")) {
+    console.log("This is a mighty strong password!")
+} else if (password.length <= 8 || !password.includes("!")) {
+    console.log("That password is strong enough.")
+} 
