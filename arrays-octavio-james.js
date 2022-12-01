@@ -52,21 +52,38 @@ var characters = ["y", "a", "r", "r", "a"]
 // console.log(characters)
 
 // Write the code that reverses the order of the letters in the characters array and saves it into a variable called charsReversed.
+let charsReversed = characters.reverse()
+// console.log(charsReversed)
 
 // Write the code that brings all the letters in the charsReversed array together into a string with an asterisk between each letter.
+// console.log(charsReversed.join("*"))
+// console.log(charsReversed)
+
 // Write the code that brings all the letters in the charsReversed array together into a string without separators.
+// console.log(charsReversed.join(""))
+
 // Create two arrays consisting of three first names of your cohort members in each.
+let array1 = ['octavio', 'matt', 'james']
+let array2 = ['raquel', 'oscar', 'dom']
 
 // Write the code that sorts the names in alphabetical order.
+// console.log(array1.sort())
+// console.log(array2.sort())
 
 // Write the code that sorts the names in reverse alphabetical order.
+// console.log(array1.reverse())
+// console.log(array2.reverse())
 
 // Write the code that sorts all the names in alphabetical order in a single array.
+// console.log(array1.concat(array2).sort())
 
 // Consider the variables:
+var numbers = [42, 221, 71, 7, 18, 87]
+var oddIndexes = []
 
-// var numbers = [42, 221, 71, 7, 18, 87]
-// var oddIndexes = []
 // Write the code that logs the values from the numbers array that are at odd indexes.
+// console.log(numbers[1], numbers[3], numbers[5])
 
 // Write the code that adds the values from odd indexes into the oddIndexes array.
+oddIndexes = [numbers[1], numbers[3], numbers[5]]
+// console.log(oddIndexes)
