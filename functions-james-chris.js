@@ -149,3 +149,65 @@ const yelling = (userString) => {
     return yell
 }
 console.log(yelling("i am yelling now"))
+
+// The World Translator
+
+// Write a function named helloWorld that takes a language code (e.g. "es", "de", "en") as an argument and returns "Hello World!" in the given language. Ensure you function works for at least 5 languages.
+// Have your function default to returning English.
+
+// function: helloWorld
+// input: a language code
+// output: "Hello World!" in the inputted language
+
+const helloWorld = (languageCode) => {
+    if (languageCode === "es") {
+        return "Hola Mundo!"
+    } else if (languageCode === "de") {
+        return "Hallo Welt!"
+    } else if (languageCode === "en") {
+        return "Hello World!"
+    } else if (languageCode === "fr") {
+        return "Bonjour le Monde!"
+    } else if (languageCode === "it") {
+        return "Ciao Mondo!"
+    } else {
+        return "Hello World!"
+    }
+}
+
+console.log(helloWorld("kdjfs"));
+
+
+// The Pluralizer
+
+// Write a function named pluralizer that takes a number and a singular noun as arguments and returns the number and pluralized form of the noun, if necessary.
+// Enhance your function so it can handle a few collective nouns like "sheep", "goose", "child", "person" and "species".
+
+// functon: pluralizer
+// input: a number and a singular noun
+// output: the number and pluralized form of the noun
+
+const pluralizer = (userNum, userNoun) => {
+    if (userNum === 0) {
+        return `The ${userNoun} does not exist!`
+    } else if (userNum === 1) {
+        return `There is only 1 ${userNoun}`
+    } else if (userNoun === "sheep") {
+        return `There are ${userNum} sheep`
+    } else if (userNoun === "goose") {
+        return `There are ${userNum} geese`
+    } else if (userNoun === "person") {
+        return `There are ${userNum} people`
+    } else if (userNoun === "child") {
+        return `There are ${userNum} children`
+    } else if (userNoun === "species") {
+        return `There are ${userNum} species`
+    } else if (typeof userNoun === "string") {
+        let pluralNoun = userNoun + "s"
+        return `There are ${userNum} ${pluralNoun}`
+    } else {
+        return "Enter a number and a noun"
+    }
+}
+
+console.log(pluralizer(3, "child"));
