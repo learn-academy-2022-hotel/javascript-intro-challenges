@@ -32,7 +32,7 @@ const nums = [3, 57, -9, 20, 67]
 // Create the code that will log the largest number from the array.
 
 for(let i = 0; i < nums.length; i++){
-      var largestNum = nums[0]
+      var largestNum = nums[i]
 
       if(largestNum < nums[i]){
         largestNum = nums[i]
