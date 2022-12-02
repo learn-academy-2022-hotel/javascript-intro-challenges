@@ -156,3 +156,35 @@ console.log(helloWorld("dd"))
 //
 // Write a function named pluralizer that takes a number and a singular noun as arguments and returns the number and pluralized form of the noun, if necessary.
 // Enhance your function so it can handle a few collective nouns like "sheep", "goose", "child", "person" and "species".
+
+const pluralizer = (num, noun) => {
+
+    if(noun === 'child' && num === 1){
+        return `${num} ${noun}`
+    }
+    else if (noun === 'child' && num > 1){
+        return `${num} children`
+    }
+    else if(num === 1 && noun === 'person'){
+        return `${num} ${noun}`
+    }
+    else if(num > 1 && noun === 'person'){
+        return `${num} people`
+    }
+    else if(num === 1 && noun === 'people'){
+        return `${num} person`
+    }
+    else if (num > 1 && noun === 'people'){
+        return `${num} ${noun}`
+    }
+    else if (num === 1){
+        return `${num} ${noun}`
+    }
+    else if (num > 1){
+        return `${num} ${noun}s`
+    }
+}
+console.log(pluralizer(1, 'sheep'))
+console.log(pluralizer(2, 'dog'))
+console.log(pluralizer(1, 'people'))
+console.log(pluralizer(2, 'people'))
