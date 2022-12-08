@@ -99,6 +99,7 @@ let sortedArray = myArray2.sort()
 
 //Write the code that sorts all the names in alphabetical order in a single array.
 
+
 //console.log(myArray1.concat(myArray2))
 
 // Create a for loop that logs each number from 1 - 20.
@@ -121,5 +122,6 @@ for (let index = 1; index < 21; index = index + 1) {
        console.log("ODD")
     } else {console.log(`$())}
     }
+
 
 
