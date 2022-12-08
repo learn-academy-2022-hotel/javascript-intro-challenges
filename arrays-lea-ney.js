@@ -99,6 +99,29 @@ let sortedArray = myArray2.sort()
 
 //Write the code that sorts all the names in alphabetical order in a single array.
 
-console.log(myArray1.concat(myArray2))
+
+//console.log(myArray1.concat(myArray2))
+
+// Create a for loop that logs each number from 1 - 20.
+
+//for (let index = 0; index < 21; index = index +1) 
+//console.log(index)
+
+// Create a for loop that logs every other number from 1 - 20.
+//for (let index = 0; index < 21; index = index +2) 
+//console.log(index)
+
+
+// Create a for loop that logs the result of each number from 1 - 20 tripled.
+//for (let index = 1; index < 21; index = index + 1) 
+//console.log(index * 3)
+
+// Create a for loop that logs each even number from 1-20, and in the place of every odd number, returns the word "ODD".
+for (let index = 1; index < 21; index = index + 1) {
+    if (index % 2 === 1){
+       console.log("ODD")
+    } else {console.log(`$())}
+    }
+
 
 
